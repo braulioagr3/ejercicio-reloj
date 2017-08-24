@@ -23,10 +23,23 @@ public class Reloj
     }
     public String dimeTuTiempo()
     {
+        
         String cadResultado="";
+        if(horas<10)
+        {
+            cadResultado+="0";
+        }
         cadResultado+=horas;
         cadResultado+=":";
+        if(minutos<10)
+        {
+            cadResultado+="0";
+        }
         cadResultado+=minutos;
+        /*if(minutos==0)
+        {
+            cadResultado+="0";
+        }*/
         return cadResultado;
     }
 }
