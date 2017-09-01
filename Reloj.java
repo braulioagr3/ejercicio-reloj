@@ -8,6 +8,11 @@ public class Reloj
         horas=horaInicial;
         minutos=minutoInicial;
     }
+    /**
+     * Va aumentado los minutos y ademas se tienen ciertas condiciones
+     * Si minutos es igual a 60 se resetean y se suman 1 a la hora
+     * Si horas es igual a 24 se resetean 
+     */
     public void ticTac()
     {
         minutos +=1;
@@ -21,6 +26,12 @@ public class Reloj
             horas = 0;
         }
     }
+    /**
+     * Genera una cadena para mostrar el tiempo con condicionles para que
+     * cuando horas o minutos sean menor que 10 agregue un cero al return
+     * para que siemrpe muestre 2 digitos
+     * @return regresa una cadena con la hora actual
+     */
     public String dimeTuTiempo()
     {
         
